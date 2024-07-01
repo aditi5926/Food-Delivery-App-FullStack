@@ -1,0 +1,15 @@
+/* CAROUSEL CSS */
+.carousel-item img {
+     width: 100%;
+     height: 90%;
+     margin-left: 10px;
+     max-height: 90vh; /* Ensures the image doesn’t exceed 90% of the viewport height */
+     object-fit: cover; /*Ensures the image covers the area without distortion*/
+}
+
+/* CARD CSS */
+.card-img-top{
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+}

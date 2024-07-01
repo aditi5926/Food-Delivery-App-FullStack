@@ -1,10 +1,12 @@
 import React from 'react'
+import paneertikka from '../pictures/paneer-tikka.jpg'
+import "./Carousel.css";
 
 function Card() {
      return (
           <div>
-               <div className="card mt-3" style={{"width": "18rem", "maxHeight": "360px"}}>
-                    <img src="..." className="card-img-top" alt="Img."/>
+               <div className="card mt-3" style={{"width": "18rem", "maxHeight": "100px"}}>
+                    <img src={paneertikka} className="card-img-top" alt="Paneer_Tikka"/>
                     <div className="card-body">
                          <h5 className="card-title">Card title</h5>
                          <p className="card-text">Some quick example text to build on the card title.</p>
