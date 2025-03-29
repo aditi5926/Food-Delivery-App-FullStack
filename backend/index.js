@@ -5,7 +5,7 @@ const app = express();
 const port = 5000;
 
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: '*',
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 }));
@@ -21,6 +21,7 @@ app.get('/', (req, res) => {
     await mongoDB();    
     app.use('/api', require('./Routes/CreateUser'));
     app.use('/api', require('./Routes/DisplayData'));
+    app.use('/api', require('./Routes/OrderData'));
 
     // Start the server
     app.listen(port, () => {
