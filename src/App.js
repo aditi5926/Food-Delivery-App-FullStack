@@ -8,6 +8,7 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import "../node_modules/bootstrap/dist/js/bootstrap.js";
 import Signup from "./screens/Signup.js";
 import { CartProvider } from "./components/ContextReducer.js";
+import MyOrder from "./screens/MyOrder.js";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/createuser" element={<Signup />} />
+          <Route exact path="/myorder" element={<MyOrder />} />
         </Routes>
       </div>
     </Router>

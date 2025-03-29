@@ -26,7 +26,7 @@ const handleLogout = () =>{
       <div className="navbar-nav me-auto mb-2">
         <Link className="nav-link active fs-5" aria-current="page" to="/">Home</Link>
         {(localStorage.getItem("authToken"))?
-          <Link className="nav-link active fs-5" aria-current="page" to="/">My Orders</Link>         
+          <Link className="nav-link active fs-5" aria-current="page" to="/myorder">My Orders</Link>         
         :""}
       </div>
       
